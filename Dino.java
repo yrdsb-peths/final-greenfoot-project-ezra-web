@@ -14,15 +14,14 @@ public class Dino extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    GreenfootImage[] idleRight = new GreenfootImage[8];
+    GreenfootImage[] idleRight = new GreenfootImage[6];
     //GreenfootImage[] idleLeft = new GreenfootImage[6];
     
     public Dino()
     {
         for(int i = 0; i < idleRight.length; i++)
         {
-            idleRight[i] = new GreenfootImage("images/dino_walking/walk" + i);
-            idleRight[i].scale(50, 50);
+            idleRight[i] = new GreenfootImage("images/Dino walking/walk" + i + ".png");
         }
         setImage(idleRight[0]);
     }
