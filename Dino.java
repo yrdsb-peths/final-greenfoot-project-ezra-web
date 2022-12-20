@@ -26,6 +26,22 @@ public class Dino extends Actor
         setImage(idleRight[0]);
     }
     
+    
+    /**
+     * Animating the dinosaur
+     */
+    int imageIndex = 0;
+    private SimpleTimer timer = new SimpleTimer();
+    public void animateDino()
+    {
+        if(timer.millisElapsed() > 140)
+        {
+            setImage(idleRight[imageIndex]);
+            imageIndex = (imageIndex + 1) % idleRight.length;
+            timer.mark();
+        }
+    }
+    
     public void act()
     {
         if(Greenfoot.isKeyDown("left"))
@@ -36,5 +52,7 @@ public class Dino extends Actor
         {
             move(2);
         }
+        
+        animateDino();
     }
 }
