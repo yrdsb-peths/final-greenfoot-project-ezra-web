@@ -16,17 +16,18 @@ public class Dino extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    GreenfootImage[] idleRight = new GreenfootImage[6];
+    GreenfootImage[] walking = new GreenfootImage[6];
     //GreenfootImage[] idleLeft = new GreenfootImage[6];
     
+    boolean hasEgg1 = false;
     public Dino()
     {
-        for(int i = 0; i < idleRight.length; i++)
+        for(int i = 0; i < walking.length; i++)
         {
-            idleRight[i] = new GreenfootImage("images/Dino walking/walk" + i + ".png");
-            idleRight[i].scale(60,60);
+            walking[i] = new GreenfootImage("images/Dino walking/walk" + i + ".png");
+            walking[i].scale(60,60);
         }
-        setImage(idleRight[0]);
+        setImage(walking[0]);
     }
     
     /**
@@ -40,9 +41,24 @@ public class Dino extends Actor
     {
         if(timer.millisElapsed() > 140)
         {
-            setImage(idleRight[imageIndex]);
-            imageIndex = (imageIndex + 1) % idleRight.length;
+            setImage(walking[imageIndex]);
+            imageIndex = (imageIndex + 1) % walking.length;
             timer.mark();
+        }
+    }
+    
+    public void stealEgg()
+    {
+        if(isTouching(Egg1.class))
+        {
+            boolean hasEgg1 = true;
+            removeTouching(Egg1.class);
+            MyWorld world = (MyWorld) getWorld();
+            int location = getX();
+            if(hasEgg1 = true && location <= 400)
+            {
+                world.increaseScore1();
+            }
         }
     }
     
@@ -53,11 +69,11 @@ public class Dino extends Actor
     public void act()
     {
         move(3);
-        if(Greenfoot.isKeyDown("right"))
+        if(Greenfoot.isKeyDown("d"))
         {
             turn(3);
         }
-        if(Greenfoot.isKeyDown("left"))
+        if(Greenfoot.isKeyDown("a"))
         {
             turn(-3);
         }
@@ -78,7 +94,7 @@ public class Dino extends Actor
         //{
         //    getY() + 5);
         //}
-        
+        //previous moving method was too rigid
         animateDino();
     }
 }
