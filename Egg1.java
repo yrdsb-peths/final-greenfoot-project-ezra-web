@@ -16,6 +16,6 @@ public class Egg1 extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        MyWorld world = (MyWorld) getWorld();
     }    
 }

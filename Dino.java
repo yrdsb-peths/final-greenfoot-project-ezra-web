@@ -17,9 +17,11 @@ public class Dino extends Actor
      */
     
     GreenfootImage[] walking = new GreenfootImage[6];
-    //GreenfootImage[] idleLeft = new GreenfootImage[6];
     
-    boolean hasEgg1 = false;
+    int hasEgg = 0;
+    //public int score1 = 0;
+    //Label score1Label;
+
     public Dino()
     {
         for(int i = 0; i < walking.length; i++)
@@ -49,16 +51,22 @@ public class Dino extends Actor
     
     public void stealEgg()
     {
+        Actor gotEgg1 = getOneIntersectingObject(Egg1.class);
         if(isTouching(Egg1.class))
         {
-            boolean hasEgg1 = true;
-            removeTouching(Egg1.class);
-            MyWorld world = (MyWorld) getWorld();
-            int location = getX();
-            if(hasEgg1 = true && location <= 400)
-            {
-                world.increaseScore1();
-            }
+            getWorld().removeObject(gotEgg1);
+            hasEgg += 1;
+        }
+    }
+
+    
+    public void score1()
+    {
+        int location = getX();
+        
+        if( hasEgg = 1 && location <= 400)
+        {
+            score1++;
         }
     }
     
@@ -77,24 +85,8 @@ public class Dino extends Actor
         {
             turn(-3);
         }
-        //setLocation (getX(), getY() + 1);
-        //int x = getX();
-        //int y = getY();
-        //setLocation(x,y);
 
-        //if(Greenfoot.isKeyDown("left"))
-        //{
-        //    move(-2);
-        //}
-        //else if(Greenfoot.isKeyDown("right"))
-        //{
-        //    move(2);
-        //}
-        //else if(Greenfoot.isKeyDown("up"))
-        //{
-        //    getY() + 5);
-        //}
-        //previous moving method was too rigid
         animateDino();
+        stealEgg();
     }
 }
