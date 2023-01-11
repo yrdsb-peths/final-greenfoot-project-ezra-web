@@ -60,7 +60,9 @@ public class Dino extends Actor
         
         if(getX() <= 400 && hasEgg == 1)
         {
+            MyWorld world = (MyWorld) getWorld();
             world.increaseScore();
+            //reset();
         }
     }
 

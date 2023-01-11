@@ -14,6 +14,7 @@ public class MyWorld extends World
     public int score2 = 0;
     Label score2Label;
     
+    public int point = 0;
     
     /**
      * Constructor for objects of class MyWorld.
@@ -59,9 +60,27 @@ public class MyWorld extends World
         addObject(egg2, 30, 200);
     }
     
+    
+    
+    public void reset()
+    {
+        point++;
+        score--;
+    }
+    
+    public void gameOver()
+    {
+        if(score == 1)
+        {
+            Label gameOver = new Label("Player 1 Wins", 100);
+            addObject(gameOver, 400, 200);
+        }
+    }
+    
     public void increaseScore()
     {
         score++;
         scoreLabel.setValue(score);
+        
     }
 }
