@@ -8,8 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-    public int score1 = 0;
-    Label score1Label;
+    public int score = 0;
+    Label scoreLabel;
     
     public int score2 = 0;
     Label score2Label;
@@ -38,8 +38,8 @@ public class MyWorld extends World
         //addObject(egg2, 30, 200);
         spawnEgg2();
         
-        score1Label = new Label(0, 50);
-        addObject(score1Label, 20, 20);
+        scoreLabel = new Label(0, 50);
+        addObject(scoreLabel, 20, 20);
         
         score2Label = new Label(0, 50);
         addObject(score2Label, 750, 20);
@@ -59,8 +59,9 @@ public class MyWorld extends World
         addObject(egg2, 30, 200);
     }
     
-    public void increaseScore1()
+    public void increaseScore()
     {
-        score1++;
+        score++;
+        scoreLabel.setValue(score);
     }
 }

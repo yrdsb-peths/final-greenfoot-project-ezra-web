@@ -57,18 +57,23 @@ public class Dino extends Actor
             getWorld().removeObject(gotEgg1);
             hasEgg += 1;
         }
+        
+        if(getX() <= 400 && hasEgg == 1)
+        {
+            world.increaseScore();
+        }
     }
 
     
-    public void score1()
-    {
-        int location = getX();
-        
-        if( hasEgg = 1 && location <= 400)
-        {
-            score1++;
-        }
-    }
+    //public void score1()
+    //{
+    //    int location = getX();
+    //    
+    //    if( hasEgg = 1 && getX() <= 400)
+    //    {
+    //        score1++;
+    //    }
+    //}
     
     /**
      * This new movement makes for more intresting gameplay
@@ -88,5 +93,7 @@ public class Dino extends Actor
 
         animateDino();
         stealEgg();
+        
+
     }
 }
