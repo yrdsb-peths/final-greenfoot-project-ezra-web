@@ -16,6 +16,8 @@ public class Player2 extends Actor
     int hasEgg = 0;
     int count = 0;
     
+    GreenfootSound touchDown = new GreenfootSound("dinosaur-2-86565.mp3");
+    
     GreenfootImage[] walk = new GreenfootImage[6];
     
     public void act() 
@@ -79,6 +81,7 @@ public class Player2 extends Actor
             world.increaseScore2();
             hasEgg --;
             count ++;
+            touchDown.play();
         }
     }
 

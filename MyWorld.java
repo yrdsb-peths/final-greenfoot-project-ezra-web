@@ -16,6 +16,8 @@ public class MyWorld extends World
     
     public int point = 0;
     
+    GreenfootSound celebration = new GreenfootSound("tada-fanfare-a-6313.mp3");
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -69,6 +71,7 @@ public class MyWorld extends World
         {
             Label gameOver = new Label("Player 1 Wins", 100);
             addObject(gameOver, 400, 200);
+            celebration.play();
         }
     }
     
@@ -79,6 +82,7 @@ public class MyWorld extends World
         {
             Label gameOverPlayer2 = new Label("Player 2 Wins", 100);
             addObject(gameOverPlayer2, 400, 200);
+            celebration.play();
         }
     }
     

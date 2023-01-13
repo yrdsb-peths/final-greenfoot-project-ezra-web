@@ -21,6 +21,8 @@ public class Dino extends Actor
     int hasEgg = 0;
     
     int count = 0;
+    
+    GreenfootSound takeEgg = new GreenfootSound("dinosaur-5-86564.mp3");
     //count if scores 3 times player 1 wins
 
 
@@ -66,6 +68,7 @@ public class Dino extends Actor
             world.increaseScore();
             hasEgg --;
             count ++;
+            takeEgg.play();
         }
     }
 
