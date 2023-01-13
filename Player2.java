@@ -13,6 +13,9 @@ public class Player2 extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
+    int hasEgg = 0;
+    int count = 0;
+    
     GreenfootImage[] walk = new GreenfootImage[6];
     
     public void act() 
@@ -27,6 +30,14 @@ public class Player2 extends Actor
             turn(-3);
         }
         animateMuchkin();
+        stealEgg();
+        tagged();
+        if(count == 3)
+        {
+            MyWorld world = (MyWorld) getWorld();
+            world.gameOverPlayer2();
+        }
+        
     }    
     
     int imageIndex = 0;
@@ -47,8 +58,41 @@ public class Player2 extends Actor
         {
             walk[i] = new GreenfootImage("images/player walking/Muchkin" + i + ".png");
             walk[i].mirrorHorizontally();
-            walk[i].scale(55,55);
+            walk[i].scale(54,54);
+            // 55, 55 past
         }
     }
     
+    
+    public void stealEgg()
+    {
+        Actor gotEgg2 = getOneIntersectingObject(Egg2.class);
+        if(isTouching(Egg2.class))
+        {
+            getWorld().removeObject(gotEgg2);
+            hasEgg += 1;
+        }
+        
+        if(getX() >= 400 && hasEgg == 1)
+        {
+            MyWorld world = (MyWorld) getWorld();
+            world.increaseScore2();
+            hasEgg --;
+            count ++;
+        }
+    }
+
+    public void tagged()
+    {
+        Actor gotCaught = getOneIntersectingObject(Dino.class);
+        if(isTouching(Dino.class) && getX() <= 400)
+        {
+            int x = 750;
+            int y = 300;
+            setLocation(x,y);
+            hasEgg = 0;
+            MyWorld world = (MyWorld) getWorld();
+            world.spawnEgg2();
+        }
+    }
 }

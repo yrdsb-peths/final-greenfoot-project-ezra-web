@@ -19,8 +19,10 @@ public class Dino extends Actor
     GreenfootImage[] walking = new GreenfootImage[6];
     
     int hasEgg = 0;
-    //public int score1 = 0;
-    //Label score1Label;
+    
+    int count = 0;
+    //count if scores 3 times player 1 wins
+
 
     public Dino()
     {
@@ -62,20 +64,25 @@ public class Dino extends Actor
         {
             MyWorld world = (MyWorld) getWorld();
             world.increaseScore();
-            //reset();
+            hasEgg --;
+            count ++;
         }
     }
 
+    public void tagged()
+    {
+        Actor gotCaught = getOneIntersectingObject(Player2.class);
+        if(isTouching(Player2.class) && getX() >= 400)
+        {
+            int x = 30;
+            int y = 300;
+            setLocation(x,y);
+            hasEgg = 0;
+            MyWorld world = (MyWorld) getWorld();
+            world.spawnEgg1();
+        }
+    }
     
-    //public void score1()
-    //{
-    //    int location = getX();
-    //    
-    //    if( hasEgg = 1 && getX() <= 400)
-    //    {
-    //        score1++;
-    //    }
-    //}
     
     /**
      * This new movement makes for more intresting gameplay
@@ -95,7 +102,12 @@ public class Dino extends Actor
 
         animateDino();
         stealEgg();
+        tagged();
         
-
+        if(count == 3)
+        {
+            MyWorld world = (MyWorld) getWorld();
+            world.gameOver();
+        }
     }
 }
