@@ -1,0 +1,38 @@
+Class documentation
+<---- javadoc command: ---->
+C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\root\VFS\ProgramFilesX86\Greenfoot\jdk\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-protected
+-Xdoclint:none
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\extensions\greenfoot.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\bluejcore.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\bluejeditor.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\bluejext.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\AppleJavaExtensions.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\junit-4.11.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\hamcrest-core-1.3.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\bluej.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\diffutils-1.2.1.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\commons-logging-api-1.1.2.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\jl1.0.1.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\opencsv-2.3.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\xom-1.2.9.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\lang-stride.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\nsmenufx-2.1.4.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\richtextfx-fat-0.9.0.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\guava-17.0.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\javassist-3.18.0.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\commons-vfs2-2.0.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\httpclient-4.1.1.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\httpcore-4.1.jar;C:\ProgramData\App-V\6F007721-A48D-46B7-B6F4-BC9B5A0868F2\5BD6FE62-C510-49BA-8B10-D25F7997AC99\Root\VFS\ProgramFilesX86\Greenfoot\lib\httpmime-4.1.1.jar;H:\profile\desktop\final-greenfoot-project-ezra-web-main
+-d
+H:\profile\desktop\final-greenfoot-project-ezra-web-main\doc
+-encoding
+windows-1252
+-charset
+windows-1252
+H:\profile\desktop\final-greenfoot-project-ezra-web-main\Dino.java
+<---- end of javadoc command ---->
+Loading source file H:\profile\desktop\final-greenfoot-project-ezra-web-main\Dino.java...
+H:\profile\desktop\final-greenfoot-project-ezra-web-main\Dino.java:67: error: '.class' expected
+        if(boolean hasEgg && location <= 400)
+                   ^
+H:\profile\desktop\final-greenfoot-project-ezra-web-main\Dino.java:67: error: illegal start of expression
+        if(boolean hasEgg && location <= 400)
+                          ^
+H:\profile\desktop\final-greenfoot-project-ezra-web-main\Dino.java:67: error: ';' expected
+        if(boolean hasEgg && location <= 400)
+                                     ^
+H:\profile\desktop\final-greenfoot-project-ezra-web-main\Dino.java:67: error: variable declaration not allowed here
+        if(boolean hasEgg && location <= 400)
+                             ^
+4 errors

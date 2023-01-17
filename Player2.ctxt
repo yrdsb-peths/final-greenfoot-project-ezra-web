@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Player2
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Player2\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Player2\ here.\r\n\ second\ player\ of\ capture\ the\ flag,\ uses\ controls\ <--\ and\ -->\r\n\ \ *\ collect\ egg\ on\ other\ side\ and\ bring\ them\ back\ to\ your\ side\ to\ score\r\n\ score\ 3\ points\ to\ win\ the\ game\r\n\ @author\ Ezra\ Kung\ \r\n\ @version\ Final\ Game\r\n
 comment1.params=
 comment1.target=void\ act()
 comment2.params=
@@ -8,7 +8,9 @@ comment2.target=void\ animateMuchkin()
 comment3.params=
 comment3.target=Player2()
 comment4.params=
-comment4.target=void\ stealEgg()
+comment4.target=void\ speed()
 comment5.params=
-comment5.target=void\ tagged()
-numComments=6
+comment5.target=void\ stealEgg()
+comment6.params=
+comment6.target=void\ tagged()
+numComments=7

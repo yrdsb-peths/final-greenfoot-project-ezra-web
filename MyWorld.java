@@ -47,7 +47,7 @@ public class MyWorld extends World
         score2Label = new Label(0, 50);
         addObject(score2Label, 750, 20);
         
-        
+        powerUp();
     }
     
     
@@ -65,24 +65,31 @@ public class MyWorld extends World
     }
     
     
+    public void powerUp()
+    {
+        PowerUp shoe = new PowerUp();
+        int x = Greenfoot.getRandomNumber(800);
+        int y = Greenfoot.getRandomNumber(400);
+        addObject(shoe, x, y);
+    }
+    
     public void gameOver()
     {
         if(score == 3)
         {
-            Label gameOver = new Label("Player 1 Wins", 100);
-            addObject(gameOver, 400, 200);
-            celebration.play();
+            EndScreen1 endScreen1 = new EndScreen1();
+            Greenfoot.setWorld(endScreen1);
         }
     }
-    
+
+
     
     public void gameOverPlayer2()
     {
         if(score2 == 3)
         {
-            Label gameOverPlayer2 = new Label("Player 2 Wins", 100);
-            addObject(gameOverPlayer2, 400, 200);
-            celebration.play();
+            EndScreen2 endScreen2 = new EndScreen2();
+            Greenfoot.setWorld(endScreen2);
         }
     }
     

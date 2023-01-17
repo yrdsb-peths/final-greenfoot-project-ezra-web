@@ -2,9 +2,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Egg1 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * just an item for Player 1 to collect
+ * @author Ezra Kung
+ * @version Final game
  */
 public class Egg1 extends Actor
 {

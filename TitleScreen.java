@@ -14,9 +14,9 @@ public class TitleScreen extends World
     Label p2 = new Label ("P2 controls <-- = Turn Down || --> = Turn Up", 30);
     Label start = new Label ("Press <<Space>> to Start", 50);
     Label p1 = new Label ("P1 controls A = Turn Up || D = Turn Down", 30);
-    Label instructions = new Label ("Capture Other Player's Egg", 40);
-    Label instructions2 = new Label ("Come Back To Your Side To Score", 40);
-    Label instructions3 = new Label ("Don't Get Caught", 40);
+    Label instructions = new Label ("Capture Other Player's Egg", 30);
+    Label instructions2 = new Label ("Come Back To Your Side To Score", 30);
+    Label instructions3 = new Label ("Don't Get Caught", 30);
     Label numberOfPlayers = new Label ("2 PLAYERS", 45);
     
     /**
@@ -33,9 +33,9 @@ public class TitleScreen extends World
         addObject (start, 400, 390);
         addObject (p1, 230, 440);
         addObject (numberOfPlayers, 700, 475);
-        addObject (instructions, 220, 150);
-        addObject (instructions2, 274, 180);
-        addObject (instructions3, 146, 210);
+        addObject (instructions, 170, 140);
+        addObject (instructions2, 210, 170);
+        addObject (instructions3, 118, 200);
         testMoves();
     }
     
@@ -53,4 +53,5 @@ public class TitleScreen extends World
             Greenfoot.setWorld(gameWorld);
         }
     }
+    
 }
