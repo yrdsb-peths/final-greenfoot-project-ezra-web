@@ -10,8 +10,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class TitleScreen extends World
 {
     //Making instructions and labels for controls
-    
-    Label title = new Label ("Egg Thieves", 75);
+
+    Label title = new Label ("Capture the Egg", 75);
     Label p2 = new Label ("P2 controls <-- = Turn Down || --> = Turn Up", 30);
     Label start = new Label ("Press <<Space>> to Start", 50);
     Label p1 = new Label ("P1 controls A = Turn Up || D = Turn Down", 30);
@@ -29,7 +29,7 @@ public class TitleScreen extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 494, 1); 
         
-        addObject (title, 200, 50);
+        addObject (title, 250, 50);
         title.setFillColor(Color.RED);
         //Adding color to text
         addObject (p2, 242, 475);
