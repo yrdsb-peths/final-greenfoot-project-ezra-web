@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class EndScreen2 here.
- * 
+ * End Screen if player 2 wins
  * @author Ezra Kung
  * @version Final Game Jan 18 
  */
@@ -14,6 +14,7 @@ public class EndScreen2 extends World
      * Constructor for objects of class EndScreen2.
      * 
      */
+    //added celebration sound effect when you win
     GreenfootSound celebration = new GreenfootSound("tada-fanfare-a-6313.mp3");
     public EndScreen2()
     {    

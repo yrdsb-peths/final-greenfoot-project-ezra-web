@@ -19,7 +19,7 @@ public class Dino extends Actor
      */
     
     GreenfootImage[] walking = new GreenfootImage[6];
-    //keeps track you got the egg
+    //keeps track if you got the egg
     int hasEgg = 0;
     
     //keeps track of score

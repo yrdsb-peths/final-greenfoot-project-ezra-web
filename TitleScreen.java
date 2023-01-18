@@ -5,11 +5,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Title screen to help show instructions and game movement
  * 
  * @author Ezra
- * @version Jan 12
+ * @version Jan 18 Final Game
  */
 public class TitleScreen extends World
 {
-    //Making instructions
+    //Making instructions and labels for controls
+    
     Label title = new Label ("Egg Thieves", 75);
     Label p2 = new Label ("P2 controls <-- = Turn Down || --> = Turn Up", 30);
     Label start = new Label ("Press <<Space>> to Start", 50);
@@ -29,21 +30,38 @@ public class TitleScreen extends World
         super(800, 494, 1); 
         
         addObject (title, 200, 50);
+        title.setFillColor(Color.RED);
+        //Adding color to text
         addObject (p2, 242, 475);
+        p2.setFillColor(Color.CYAN);
+        
         addObject (start, 400, 390);
+        start.setFillColor(Color.WHITE);
+        
         addObject (p1, 230, 440);
+        p1.setFillColor(Color.YELLOW);
+        
         addObject (numberOfPlayers, 700, 475);
+        
         addObject (instructions, 170, 140);
+        instructions.setFillColor(Color.ORANGE);
+        
         addObject (instructions2, 210, 170);
+        instructions2.setFillColor(Color.ORANGE);
+        
         addObject (instructions3, 118, 200);
+        instructions3.setFillColor(Color.ORANGE);
+        
         testMoves();
     }
     
+    //adds Player 1 just to test the movement
     public void testMoves()
     {
         Dino test = new Dino();
         addObject (test, 80, 300);
     }
+    
     
     public void act()
     {

@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Egg2 here.
- * Item for Player 2 to collect
+ * Item for Player 2 to collect, Nothing else
  * @author Ezra Kung
  * @version Final game
  */

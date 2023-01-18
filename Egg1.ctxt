@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Egg1
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Egg1\ here.\r\n\ just\ an\ item\ for\ Player\ 1\ to\ collect\r\n\ @author\ Ezra\ Kung\r\n\ @version\ Final\ game\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Egg1\ here.\r\n\ just\ an\ item\ for\ Player\ 1\ to\ collect\r\n\ image\ looks\ bigger\ than\ other\ egg1\ but\ they\ share\ the\ same\ hit\ box\r\n\ @author\ Ezra\ Kung\r\n\ @version\ Final\ game\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Egg1\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

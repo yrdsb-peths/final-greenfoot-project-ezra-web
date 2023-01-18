@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Write a description of class PowerUp here.
  * randonmly spawns a shoe that if collected will increase speed by 1
  * @author Ezra Kung
- * @version Final Game
+ * @version Final Game Jan 18
  */
 public class PowerUp extends Actor
 {
